@@ -1,0 +1,7 @@
+import $ from 'jquery';
+
+export default function create(element) {
+  const $el = $(element);
+
+  // Material initialisation
+}

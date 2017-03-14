@@ -1,0 +1,17 @@
+// Actual font sizes
+$font-sizes: () !default;
+
+// Set font-size together with line-height for optimal vertical rythms
+@mixin font-size($size) {
+  @if map-has-key($font-sizes, $size) {
+    $entry: map-get($font-sizes, $size);
+    $font-size: nth($entry, 1);
+    $line-height: nth($entry, 2);
+
+    font-size: $font-size;
+    line-height: scut-strip-unit(scut-em($line-height, $font-size));
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$size}`. "
+      + "Please make sure it is defined in `$font-sizes` map.";
+  }
+}

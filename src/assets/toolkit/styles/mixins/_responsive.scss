@@ -1,0 +1,13 @@
+@mixin show-between($lower, $upper, $display: block) {
+  display: none;
+
+  @include media-breakpoint-between($lower, $upper) {
+    display: $display;
+  }
+}
+
+@mixin hide-between($lower, $upper) {
+  @include media-breakpoint-between($lower, $upper) {
+    display: none !important;
+  }
+}

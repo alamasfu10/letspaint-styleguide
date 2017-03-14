@@ -1,0 +1,20 @@
+@mixin make-container($max-widths: $container-max-widths, $background-color: null, $padding: null) {
+  @include container();
+
+  @if $background-color != null {
+    background-color: $background-color;
+  }
+
+  @if $padding != null {
+    padding: $padding;
+  }
+
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      // We use max-width AND width (instead of just setting `max-width: $container-max-width`),
+      // to get `margin: auto` working for absolutely positioned (and stretched) elements in IE
+      max-width: 100%;
+      width: $container-max-width;
+    }
+  }
+}

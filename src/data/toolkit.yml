@@ -1,0 +1,11 @@
+colors:
+  primary:
+    cm-white: "#ffffff"
+    cm-gray: "#E5E8F0"
+    cm-darkgray: "#9195a0"
+    cm-lightblack: "#3a3a3a"
+    cm-black: "#212121"
+  secondary:
+    cm-lightblue: "#f2f4ff"
+    cm-blue: "#6e90f1"
+    cm-red: "#ed6675"

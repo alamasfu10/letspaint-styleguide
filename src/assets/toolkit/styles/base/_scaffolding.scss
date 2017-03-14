@@ -1,0 +1,12 @@
+@include scut-reset-button;
+@include scut-reset-semanticize;  // Reset headers <h1>, <h2>, ...
+@include scut-reset-border-box;
+
+body {
+  @include font-size(base);
+
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  background: $color-bg;
+  color: $color-text;
+}

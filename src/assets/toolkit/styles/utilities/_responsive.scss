@@ -1,0 +1,19 @@
+.u-show-xs { @include show-between('xs', 'xs'); }
+.u-show-sm { @include show-between('sm', 'sm'); }
+.u-show-md { @include show-between('md', 'md'); }
+.u-show-lg { @include show-between('lg', 'lg'); }
+.u-show-xl { @include show-between('xl', 'xl'); }
+
+.u-hide-xs { @include hide-between('xs', 'xs'); }
+.u-hide-sm { @include hide-between('sm', 'sm'); }
+.u-hide-md { @include hide-between('md', 'md'); }
+.u-hide-lg { @include hide-between('lg', 'lg'); }
+.u-hide-xl { @include hide-between('xl', 'xl'); }
+
+.u-show-up-sm { @include show-between('sm', 'xl'); }
+.u-show-up-md { @include show-between('md', 'xl'); }
+.u-show-up-lg { @include show-between('lg', 'xl'); }
+
+.u-hide-up-sm { @include hide-between('sm', 'xl'); }
+.u-hide-up-md { @include hide-between('md', 'xl'); }
+.u-hide-up-lg { @include hide-between('lg', 'xl'); }

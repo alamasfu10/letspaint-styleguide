@@ -1,0 +1,10 @@
+@mixin unstyled-link() {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
+
+  // IMPORTANT: Provide an alternative for accessibility
+  &:active, &:focus {
+    outline: none;
+  }
+}

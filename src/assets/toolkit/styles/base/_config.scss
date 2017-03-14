@@ -1,0 +1,82 @@
+// Typography
+// -------------------------------------------
+
+$font-family-base:                  "Raleway", Arial, sans-serif;
+
+// First entry is font size and second entry is line height
+$font-sizes: (
+  xs:     (11px, 16px),
+  s:      (14px, 30px),
+  base:   (16px, 23px),
+  l:      (26px, 37px),
+  xl:     (30px, 42px),
+  xxl:    (50px, 70px),
+  xxxl:   (64px, 92px),
+);
+
+$font-weight-light:                 300;
+$font-weight-base:                  400;
+$font-weight-semi-bold:             600;
+$font-weight-bold:                  700;
+
+// Colors
+// -------------------------------------------
+
+$color-white:                    #ffffff;
+$color-gray:                     #E5E8F0;
+$color-darkgray:                 #9195a0;
+$color-lightblack:               #3a3a3a;
+$color-black:                    #212121;
+$color-lightblue:                #f2f4ff;
+$color-blue:                     #6e90f1;
+$color-red:                      #ed6675;
+
+
+// Semantic Colors
+// -------------------------------------------
+
+$color-bg:                          $color-white;
+$color-bg-light:                    $color-lightblue;
+$color-text:                        $color-black;
+
+
+// Layout
+// -------------------------------------------
+
+$space-xs:                           7px;
+$space-s:                           10px;
+$space-base:                        15px;
+$space-l:                           30px;
+$space-xl:                          45px;
+$space-xxl:                         60px;
+
+$space-section-top:                 $space-xxl;
+$space-section-bottom:              $space-xxl;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1174px
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+$gutter-width:                      $space-base;
+$column-width:                      $gutter-width;
+
+$susy: (
+  container: 100%,
+  columns: 12,
+  math: fluid,
+  column-width: $column-width,
+  gutters: 1,
+  gutter-position: inside-static,
+  global-box-sizing: border-box
+);
